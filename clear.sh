@@ -23,6 +23,10 @@ echo "After Fix there will be info about disk size like - Disk /dev/sda: 67.8GB 
 echo "Then enter resize ( partition number ) the partition number most probably 2 so"
 echo "Enter resizepart 2 and it will ask you the end? enter the above value 67.8GB and hit enter and then q to quit"
 sudo parted
+# The partition  resizedwas sda2
+sudo resize2fs -p /dev/sda2
+# Check the size of the disk 
+df -h
 swupd bundle-add kernel-lts
 clr-boot-manager set-timeout 10
 clr-boot-manager update

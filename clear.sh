@@ -14,7 +14,7 @@
     # Light Gray   0;37     White         1;37
     RED='\033[0;31m'
     NC='\033[0m' # No Color
-    ORANGE='\033[0;31m'
+    ORANGE='\033[0;33m'
     lsblk
     sleep 5  # Waits 5 seconds.
     echo "You need more than maybe ${RED}50GB of space to build your own RPM packages"

@@ -14,6 +14,7 @@ select yn in "Yes (1)" "No (2)"; do
         No ) exit;;
     esac
 done
+sudo parted
 swupd bundle-add kernel-lts
 clr-boot-manager set-timeout 10
 clr-boot-manager update

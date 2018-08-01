@@ -19,11 +19,11 @@ do
             *) echo "Use 1 or 2 options";continue;;
     esac
 done
-echo "We will resize the partition now \nusing parted and resizepart. \nFirst use ( p ) to print out the partitions."
-echo "Then if warning message appears \nabout  - not all space available - etc select ( Fix )"
-echo "After Fix there will be info about disk \nsize like - Disk /dev/sda: 67.8GB - "
-echo "Then enter resize ( partition number ) \nthe partition number most probably 2 so"
-echo "Enter resizepart 2 and it will ask you the end? \nenter the above value 67.8GB and hit enter and then q to quit"
+echo -e "We will resize the partition now \nusing parted and resizepart. \nFirst use ( p ) to print out the partitions."
+echo -e "Then if warning message appears \nabout  - not all space available - etc select ( Fix )"
+echo -e "After Fix there will be info about disk \nsize like - Disk /dev/sda: 67.8GB - "
+echo -e "Then enter resize ( partition number ) \nthe partition number most probably 2 so"
+echo -e "Enter resizepart 2 and it will ask you the end? \nenter the above value 67.8GB and hit enter and then q to quit"
 sudo parted
 # The partition  resizedwas sda2
 sudo resize2fs -p /dev/sda2

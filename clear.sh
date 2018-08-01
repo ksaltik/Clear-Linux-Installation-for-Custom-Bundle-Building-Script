@@ -1,4 +1,6 @@
 #!/bin/bash
+# Get root privileges
+sudo -s
 # Enable sshd to login from ssh client
 # echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 # systemctl restart sshd

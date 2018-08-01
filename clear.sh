@@ -2,8 +2,12 @@
     # Get root privileges
     # sudo -s
     # Enable sshd to login from ssh client
-    # echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
-    # systemctl restart sshd
+    echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+    systemctl restart sshd
+    echo "Add bridget network adapter as a second ethernet adapter"
+    echo "${ORANGE}Get the ip address to connect from ssh client${NC}"
+    ifconfig
+    sleep 2
     # Color codes etc
     #https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
     RED='\033[0;31m'

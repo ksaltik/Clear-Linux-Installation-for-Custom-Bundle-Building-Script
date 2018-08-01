@@ -12,8 +12,10 @@ options=("Yes" "No")
 select yn in "${options[@]}"
 do
     case $yn in
-        "Yes" ) sudo swupd bundle-add storage-utils; break;;
-        "No" ) exit;;
+        "Yes") sudo swupd bundle-add storage-utils; break;;
+#       "No" ) exit;;
+        "No" ) break;;
+
             *) echo "Use 1 or 2 options";continue;;
     esac
 done

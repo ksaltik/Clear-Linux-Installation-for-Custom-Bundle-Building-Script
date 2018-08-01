@@ -6,7 +6,7 @@
 # systemctl restart sshd
 lsblk
 sleep 5  # Waits 5 seconds.
-echo "You need more than maybe 50GB ıf space to build your own RPM packages and$
+echo "You need more than maybe 50GB ıf space to build your own RPM packages"
 echo "You need to install storage utils to extend partition size?"
 options=("Yes" "No")
 select yn in "${options[@]}"
